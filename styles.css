@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#main-heading {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.todo-item {
+  display: grid;
+  grid-template-columns: min-content 1fr auto auto auto;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+.todo-item button {
+  background-color: rgb(92, 9, 9);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 0px;
+  cursor: pointer;
+  min-width: 45px;
+}
+
+.todo-item button:first-child {
+  grid-column: 4;
+}
+
+.todo-item span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.todo-item .edit-button {
+  background-color: blue;
+}
+
+.edit-button:hover {
+  background-color: indigo;
+}
+
+.todo-item .delete-button {
+  background-color: red;
+}
+.delete-button:hover {
+  background-color: darkred;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#todo-input,
+#todo-date {
+  font-size: 15px;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.btn-todo {
+  background-color: #408140;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.btn-todo:hover {
+  background-color: #376e37;
+}
+.todo-container {
+  display: grid;
+  row-gap: 5px;
+}
+
+.todo-section {
+  margin-top: 30px;
+}
+
+.todo-section h2 {
+  text-align: center;
+}
+
+.todo-container {
+  display: grid;
+  row-gap: 5px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-item {
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 25px 200px 140px 50px 60px;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .todo-item {
+    grid-template-columns: min-content 1fr auto;
+  }
+}
